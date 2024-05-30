@@ -12,6 +12,9 @@ const authOptions = {
   ],
   secret: `UItTuD1HcGXIj8ZfHUswhYdNd40Lc325R8VlxQPUoR0=`,
   redirect_uri: `https://dev-qg1ftdys736bk5i3.us.auth0.com`,
+  authorizationParams:{
+    redirect_uri: window.location.origin
+    }
 };
 
 export default authOptions;
