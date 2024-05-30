@@ -42,7 +42,7 @@ export default function StyledComponents() {
 	const setCoins = useStore((state) => state.setCoins);
 
 	const table = useReactTable({
-		data: coins,
+		data: coins as any,
 		columns,
 		getCoreRowModel: getCoreRowModel(),
 	});
